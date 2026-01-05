@@ -5,7 +5,6 @@ Versions used for reproduction:
 - NPM `11.6.4`
 - OS `Manjaro Linux Linux 6.17.13-1-MANJARO`
 
-
 ## How to reproduce
 
 1. Clone this repository
@@ -17,3 +16,5 @@ Actual: `dist/` is empty.
 
 ## Variations
 If the `tsdown.config.ts` is modified to only contain one `format`, so either `cjs` OR `esm`, then watch mode works as expected and will compile the library. If both are present, watch mode does nothing.
+
+Another way to get tsdown to work is to run it without watch mode like this: `tsdown`.
